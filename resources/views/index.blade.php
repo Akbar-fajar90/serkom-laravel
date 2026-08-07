@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMK Negeri 3 Kendal - SKANEGA</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <!-- Alternative CDN jika belum build Vite -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preload" as="image" href="{{ asset('images/smk.webp') }}" type="image/webp">
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
@@ -31,7 +30,7 @@
     <!-- Hero Section -->
     <section id="beranda" class="relative bg-gray-900 text-white py-24 md:py-32 overflow-hidden">
         <div class="absolute inset-0 opacity-40">
-            <img src="{{ asset('images/SKANEGA.jpg') }}" alt="Gedung SMKN 2 Kendal" class="w-full h-full object-cover">
+            <img src="{{ asset('images/smk.webp') }}" alt="Gedung SMKN 3 Kendal" class="w-full h-full object-cover" loading="eager">
         </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
             <div class="max-w-2xl">
@@ -47,7 +46,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="relative">
-                    <img src="{{ asset('images/SKANEGA.jpg') }}" alt="SMKN 3 Kendal Front" class="rounded-2xl shadow-xl w-full h-96 object-cover">
+                    <img src="{{ asset('images/smk.webp') }}" alt="SMKN 3 Kendal Front" class="rounded-2xl shadow-xl w-full h-96 object-cover" loading="lazy">
                     <div class="absolute -bottom-6 -right-6 bg-blue-900 text-white p-6 rounded-2xl shadow-lg hidden sm:block">
                         <p class="text-3xl font-extrabold">A</p>
                         <p class="text-sm text-gray-300">Akreditasi Sekolah</p>

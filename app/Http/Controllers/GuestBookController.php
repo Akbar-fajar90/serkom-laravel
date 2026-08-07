@@ -22,7 +22,7 @@ class GuestBookController extends Controller
 
     public function adminIndex()
     {
-        $guestMessages = GuestMessage::latest()->get();
+        $guestMessages = GuestMessage::latest()->paginate(10);
         return view('admin.guestbook.index', compact('guestMessages'));
     }
 
@@ -50,4 +50,5 @@ class GuestBookController extends Controller
 
         return redirect()->route('admin.guestMessage.index')->with('success', 'Komentar berhasil dihapus.');
     }
+    
 }
