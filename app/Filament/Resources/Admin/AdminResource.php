@@ -19,7 +19,7 @@ class AdminResource extends Resource
     protected static ?string $model = User::class;
 
     protected static string|BackedEnum|null $navigationIcon =
-        Heroicon::OutlinedChatBubbleBottomCenterText;
+        Heroicon::OutlinedUser;
 
     protected static ?string $recordTitleAttribute = 'name';
 

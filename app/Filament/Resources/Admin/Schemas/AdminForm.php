@@ -21,6 +21,10 @@ class AdminForm
                     ->password()
                     ->dehydrated(fn ($state) => filled($state))
                     ->required(fn (string $operation): bool => $operation === 'create'),
+                TextInput::make('nama')
+                    ->label('Nama')
+                    //->required()
+                    ->maxLength(255),
             ]);
     }
 }

@@ -28,6 +28,10 @@ class AdminTable
                     ->label('kata sandi')
                     ->limit(50)
                     ->wrap(),
+                TextColumn::make('nama')
+                    ->label('Nama')
+                    ->searchable()
+                    ->sortable(),
             ])
             ->filters([
                 //
